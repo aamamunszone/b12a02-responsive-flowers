@@ -47,6 +47,11 @@
     />
 
     <!-- Stylesheets -->
+    <style>
+      /* * {
+        border: 1px solid red;
+      } */
+    </style>
     <!-- Tailwind CSS Play CDN and Styles -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./assets/styles/tailwind.css" />
@@ -55,8 +60,37 @@
     <title>Flower Shop | Fresh Blooms Delivered With Love</title>
   </head>
 
-  <body>
+  <body class="bg-[#f5f8ff]">
     <!-- Header Section -->
+    <header
+      class="container flex justify-between items-center max-w-[90%] sm:max-w-[85%] lg:max-w-[80%] max-h-14 sm:max-h-32 lg:max-h-64 mx-auto mt-2 sm:mt-4 lg:mt-8"
+    >
+      <div>
+        <a href="#"
+          ><img
+            src="/assets/images/logos/logo.png"
+            alt="Company logo"
+            class="max-h-14 sm:max-h-16 lg:max-h-18"
+        /></a>
+      </div>
+      <div
+        class="flex items-center justify-between gap-12 text-2xl lg:text-lg text-nowrap"
+      >
+        <nav class="hidden lg:block">
+          <ul class="flex items-center justify-between gap-12">
+            <li>
+              <a href="#" class="font-inter font-bold text-[#252432]">Home</a>
+            </li>
+            <li><a href="#" class="font-inter text-[#8987A1]">Shop</a></li>
+            <li><a href="#" class="font-inter text-[#8987A1]">About Us</a></li>
+          </ul>
+        </nav>
+        <div class="cursor-pointer">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span>Cart ($56)</span>
+        </div>
+      </div>
+    </header>
 
     <!-- Main Section -->
     <!-- Banner Section -->
