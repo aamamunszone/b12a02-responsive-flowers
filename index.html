@@ -60,6 +60,7 @@
     <header
       class="flex justify-between items-center max-w-[95%] mx-auto mt-3 md:max-w-[90%] md:mt-5 lg:max-w-[80%] lg:mt-8"
     >
+      <!-- Logo Section -->
       <div>
         <a href="#"
           ><img
@@ -68,6 +69,7 @@
             class="max-h-14 md:max-h-18 lg:max-h-24"
         /></a>
       </div>
+      <!-- Navbar Section -->
       <div
         class="text-[20px] text-nowrap md:text-2xl lg:flex lg:justify-between lg:items-center lg:gap-12 lg:text-[20px]"
       >
@@ -109,6 +111,7 @@
       <section
         class="flex flex-col-reverse justify-between items-start gap-6 max-w-full mx-auto pt-6 mt-8 mb-16 md:max-w-[90%] md:pt-14 md:mt-10 md:mb-20 lg:flex-row lg:items-end lg:gap-0 lg:max-w-[80%] lg:pt-36 lg:mt-12 lg:mb-32"
       >
+        <!-- Banner Content -->
         <div class="max-w-[95%] mx-auto md:max-w-full lg:max-w-2/4 slide-left">
           <h1
             class="font-noto-serif font-bold uppercase text-3xl text-nowrap mb-2.5 leading-10 md:text-4xl md:leading-12 lg:text-6xl lg:leading-17"
@@ -122,6 +125,7 @@
             variety of fresh flowers that are perfect for any occasion.
           </p>
         </div>
+        <!-- Banner Image -->
         <div class="w-full slide-right">
           <img
             src="./assets/images/banners/hero-flower.png"
@@ -135,6 +139,7 @@
       <section
         class="max-w-[95%] mx-auto text-center mb-12 md:max-w-[90%] md:mb-18 lg:max-w-[80%] lg:mb-44"
       >
+        <!-- Plants Showcase Heading -->
         <div class="mb-10 md:mb-12 lg:mb-14">
           <h2
             class="font-noto-serif font-bold text-3xl text-nowrap mb-4 md:text-4xl md:mb-5 lg:text-5xl lg:mb-6"
@@ -149,9 +154,38 @@
             variety of fresh.
           </p>
         </div>
+        <!-- Plants Showcase Content -->
         <div
           class="grid grid-cols-2 gap-x-5 gap-y-8 md:grid-cols-3 lg:grid-cols-4"
         >
+          <!-- Product Card 01 -->
+          <div
+            class="flex flex-col justify-between items-center gap-8 md:gap-10 lg:gap-12"
+          >
+            <div class="w-full">
+              <img
+                src="./assets/images/products/sample-flower-image.png"
+                alt="Product Image"
+                class="w-full h-auto"
+              />
+            </div>
+            <div class="w-full font-inter">
+              <div class="text-[20px] mb-5 md:text-2xl md:mb-7 lg:mb-9">
+                <h3 class="font-medium mb-1 md:mb-2 lg:mb-3">Lily Blossom</h3>
+                <span class="font-bold text-nowrap">20 USD</span>
+              </div>
+              <div>
+                <!-- Put it later on the onclick -> handleAddToCart -->
+                <button
+                  onclick="alert('Flower Added to Cart')"
+                  class="w-full font-semibold text-nowrap bg-[#E95A08] hover:bg-[#cc4f06] transition-all duration-300 text-white uppercase py-2.5 cursor-pointer"
+                >
+                  Add To Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Product Card 02 -->
           <div
             class="flex flex-col justify-between items-center gap-8 md:gap-10 lg:gap-12"
           >
@@ -178,6 +212,7 @@
               </div>
             </div>
           </div>
+          <!-- Product Card 03 -->
           <div
             class="flex flex-col justify-between items-center gap-8 md:gap-10 lg:gap-12"
           >
@@ -204,6 +239,7 @@
               </div>
             </div>
           </div>
+          <!-- Product Card 04 -->
           <div
             class="flex flex-col justify-between items-center gap-8 md:gap-10 lg:gap-12"
           >
@@ -230,6 +266,7 @@
               </div>
             </div>
           </div>
+          <!-- Product Card 05 -->
           <div
             class="flex flex-col justify-between items-center gap-8 md:gap-10 lg:gap-12"
           >
@@ -256,6 +293,7 @@
               </div>
             </div>
           </div>
+          <!-- Product Card 06 -->
           <div
             class="flex flex-col justify-between items-center gap-8 md:gap-10 lg:gap-12"
           >
@@ -282,6 +320,7 @@
               </div>
             </div>
           </div>
+          <!-- Product Card 07 -->
           <div
             class="flex flex-col justify-between items-center gap-8 md:gap-10 lg:gap-12"
           >
@@ -308,32 +347,7 @@
               </div>
             </div>
           </div>
-          <div
-            class="flex flex-col justify-between items-center gap-8 md:gap-10 lg:gap-12"
-          >
-            <div class="w-full">
-              <img
-                src="./assets/images/products/sample-flower-image.png"
-                alt="Product Image"
-                class="w-full h-auto"
-              />
-            </div>
-            <div class="w-full font-inter">
-              <div class="text-[20px] mb-5 md:text-2xl md:mb-7 lg:mb-9">
-                <h3 class="font-medium mb-1 md:mb-2 lg:mb-3">Lily Blossom</h3>
-                <span class="font-bold text-nowrap">20 USD</span>
-              </div>
-              <div>
-                <!-- Put it later on the onclick - handleAddToCart -->
-                <button
-                  onclick="alert('Flower Added to Cart')"
-                  class="w-full font-semibold text-nowrap bg-[#E95A08] hover:bg-[#cc4f06] transition-all duration-300 text-white uppercase py-2.5 cursor-pointer"
-                >
-                  Add To Cart
-                </button>
-              </div>
-            </div>
-          </div>
+          <!-- Product Card 08 -->
           <div
             class="flex flex-col justify-between items-center gap-8 md:gap-10 lg:gap-12"
           >
@@ -363,10 +377,11 @@
         </div>
       </section>
 
-      <!-- Trusted Seller Section -->
+      <!-- Plants Lover Section -->
       <section
         class="relative flex flex-col justify-between items-start gap-5 max-w-[95%] mx-auto mb-20 md:max-w-[90%] md:mb-24 lg:max-w-[80%] lg:mb-28 lg:flex-row lg:items-center lg:gap-[10%]"
       >
+        <!-- Plants Lover Image -->
         <div class="relative w-full">
           <img
             src="./assets/images/brands/flower-store.png"
@@ -379,10 +394,11 @@
             <img
               src="./assets/images/logos/trusted-badge.png"
               alt="Trusted Badge"
-              class="max-w-[220px] h-auto [filter:drop-shadow(2px_2px_2px_rgba(0,0,0,0.4))_drop-shadow(-2px_2px_2px_rgba(0,0,0,0.4))_drop-shadow(2px_-2px_2px_rgba(0,0,0,0.4))_drop-shadow(-2px_-2px_2px_rgba(0,0,0,0.4))] animate-[spin_7s_linear_infinite]"
+              class="max-w-[240px] h-auto [filter:drop-shadow(2px_2px_2px_rgba(0,0,0,0.4))_drop-shadow(-2px_2px_2px_rgba(0,0,0,0.4))_drop-shadow(2px_-2px_2px_rgba(0,0,0,0.4))_drop-shadow(-2px_-2px_2px_rgba(0,0,0,0.4))] animate-[spin_7s_linear_infinite]"
             />
           </div>
         </div>
+        <!-- Plants Lover Content -->
         <div class="w-full">
           <h2
             class="font-noto-serif font-bold text-3xl mb-6 md:text-4xl md:mb-7 lg:text-5xl lg:mb-8 lg:leading-16"
@@ -415,6 +431,7 @@
       <section
         class="max-w-[95%] mx-auto text-center mb-10 md:max-w-[90%] md:mb-20 lg:max-w-[80%] lg:mb-32"
       >
+        <!-- Latest Deals Heading -->
         <div class="mb-12">
           <h2
             class="font-noto-serif font-bold text-3xl text-nowrap mb-4 md:text-4xl md:mb-5 lg:text-5xl lg:mb-6"
@@ -429,17 +446,21 @@
             variety of fresh.
           </p>
         </div>
+        <!-- Latest Deals Content -->
         <div
           class="grid grid-cols-1 gap-6 text-white md:grid-cols-2 lg:grid-cols-3 lg:grid-rows-2"
         >
+          <!-- Latest Deals Content Card 01 -->
           <div
             class="relative bg-[url('./assets/images/backgrounds/deal-bloom.png')] bg-no-repeat bg-cover bg-center rounded-2xl"
           >
             <!-- Opacity Overlay -->
-            <div class="absolute inset-0 bg-black/40 rounded-2xl"></div>
+            <div
+              class="absolute inset-0 bg-black/60 rounded-2xl lg:bg-black/40"
+            ></div>
             <div class="relative px-12 py-16 lg:px-8 lg:py-14">
               <h3
-                class="font-noto-serif font-semibold text-2xl text-nowrap mb-3 lg:text-2xl"
+                class="font-noto-serif font-semibold text-2xl text-nowrap mb-3 lg:text-[20px]"
               >
                 60% Off | Bloom Plant
               </h3>
@@ -450,14 +471,17 @@
               >
             </div>
           </div>
+          <!-- Latest Deals Content Card 02 -->
           <div
             class="relative bg-[url('./assets/images/backgrounds/deal-ana.png')] bg-no-repeat bg-cover bg-center rounded-2xl lg:order-3"
           >
             <!-- Opacity Overlay -->
-            <div class="absolute inset-0 bg-black/40 rounded-2xl"></div>
+            <div
+              class="absolute inset-0 bg-black/60 rounded-2xl lg:bg-black/40"
+            ></div>
             <div class="relative px-12 py-16 lg:px-8 lg:py-14">
               <h3
-                class="font-noto-serif font-semibold text-2xl text-nowrap mb-3 lg:text-2xl"
+                class="font-noto-serif font-semibold text-2xl text-nowrap mb-3 lg:text-[20px]"
               >
                 30% Off | Ana Plant
               </h3>
@@ -468,11 +492,14 @@
               >
             </div>
           </div>
+          <!-- Latest Deals Content Card 03 -->
           <div
             class="relative bg-[url('./assets/images/backgrounds/deal-zabo.png')] bg-no-repeat bg-cover bg-center rounded-2xl md:col-span-2 lg:order-2 lg:row-span-2 lg:flex lg:justify-center lg:items-center"
           >
             <!-- Opacity Overlay -->
-            <div class="absolute inset-0 bg-black/40 rounded-2xl"></div>
+            <div
+              class="absolute inset-0 bg-black/60 rounded-2xl lg:bg-black/40"
+            ></div>
             <div class="relative px-12 py-16 lg:py-14">
               <h3
                 class="font-noto-serif font-semibold text-2xl text-nowrap mb-3 lg:text-4xl lg:mb-5"
@@ -499,7 +526,7 @@
       <div class="absolute inset-0 bg-black/10"></div>
       <div class="relative px-12 py-20 md:px-16 md:py-36 lg:px-64">
         <h2
-          class="font-noto-serif font-semibold text-[22px] text-center text-white mb-8 md:text-[28px] md:mb-12 lg:text-4xl lg:mb-16"
+          class="font-noto-serif font-semibold text-[22px] text-center text-white mb-8 md:text-[28px] md:mb-12 lg:text-5xl lg:mb-14"
         >
           Join the colorful Bunch
         </h2>
@@ -516,7 +543,7 @@
           />
           <button
             type="submit"
-            class="bg-[#E95A08] text-white p-2.5 md:p-2 lg:px-10 lg:py-2 cursor-pointer"
+            class="bg-[#E95A08] text-white p-2.5 md:p-2 lg:px-10 lg:py-2.5 cursor-pointer"
           >
             Subscribe
           </button>
@@ -528,17 +555,19 @@
     <footer
       class="grid grid-cols-1 max-w-[95%] mx-auto text-[#00000080] text-lg py-10 md:grid-cols-2 md:max-w-[90%] md:py-14 lg:grid-cols-[40%_20%_20%_20%] lg:max-w-[80%] lg:py-18"
     >
+      <!-- Footer Heading -->
       <div class="md:order-2 lg:order-1">
         <img
           src="./assets/images/logos/logo.png"
           alt="Company Logo"
-          class="mb-3"
+          class="mb-3 md:mb-4 lg:mb-5"
         />
-        <p class="pr-[30%] mb-7">
+        <p class="pr-[30%] mb-7 lg:text-2xl lg:pr-[20%]">
           Indulge your senses with the beauty and fragrance of our fresh flower
           shop.
         </p>
       </div>
+      <!-- Footer Basic Navigation -->
       <div class="md:order-1 lg:order-2">
         <ul>
           <li class="mb-5 md:mb-2 lg:mb-6">
@@ -578,6 +607,7 @@
           </li>
         </ul>
       </div>
+      <!-- Footer Basic Source Navigation -->
       <div class="md:order-3 lg:order-3">
         <ul>
           <li class="mb-5 md:mb-2 lg:mb-6">
@@ -617,6 +647,7 @@
           </li>
         </ul>
       </div>
+      <!-- Footer Social Navigation -->
       <div
         class="flex items-center gap-[10%] md:order-4 md:items-end lg:order-4 lg:items-start"
       >
