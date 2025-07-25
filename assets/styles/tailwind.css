@@ -4,12 +4,41 @@
 /* Tailwind Base Utilities */
 @import "tailwindcss";
 
-/* Custom Utilities Layer */
-@layer utilities {
-  .font-inter {
-    font-family: "Inter", sans-serif;
+/* Custom Styles */
+/* Font Family */
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
+.font-noto-serif {
+  font-family: "Noto Serif", serif;
+}
+
+/* Keyframes for Animation Effects */
+/* Banner Animation */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
   }
-  .font-noto-serif {
-    font-family: "Noto Serif", serif;
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
+}
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-left {
+  animation: slideInLeft 0.7s ease-out forwards;
+}
+.slide-right {
+  animation: slideInRight 0.7s ease-out forwards;
 }
